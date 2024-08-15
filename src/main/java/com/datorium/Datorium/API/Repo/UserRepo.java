@@ -14,15 +14,7 @@ public class UserRepo {
         return users.size();
     }
 
-    public ArrayList<User> getAllUsers() {
-        //return new ArrayList<>(users);
-        return users;
+    public List<User> getAllUsers() {
+        return new ArrayList<>(users);
     }
-
-    public User update(int userIndex, User updateUserDTO){
-        var user = users.get(userIndex);
-        user.name = updateUserDTO.name;
-        return user;
-    }
-
 }

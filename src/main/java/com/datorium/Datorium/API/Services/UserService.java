@@ -3,7 +3,6 @@ package com.datorium.Datorium.API.Services;
 import com.datorium.Datorium.API.DTOs.User;
 import com.datorium.Datorium.API.Repo.UserRepo;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class UserService {
@@ -18,12 +17,7 @@ public class UserService {
         return userRepo.add(user);
     }
 
-    public ArrayList<User> getAllUsers() {
+    public List<User> getAllUsers() {
         return userRepo.getAllUsers();
     }
-
-    public User update(int userIndex, User updateUserDTO){
-        return userRepo.update(userIndex, updateUserDTO);
-    }
-
 }
